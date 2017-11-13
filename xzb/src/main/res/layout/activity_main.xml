@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorlanse">
+
+    <RelativeLayout
+        android:id="@+id/qqLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+     <evan.wang.view.CircleImageView
+            android:id="@+id/head_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/touxiang" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="200dp"
+            android:text="李力喆"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/texr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="2dp"
+
+            android:text="南师附中江宁分校小学部小学2017级  五班"
+            android:layout_below="@id/text1"
+            android:textSize="18sp"/>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+<TextView
+    android:id="@+id/text3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:text="心情吐槽："
+    android:drawableLeft="@drawable/ic_create"
+    android:textSize="18sp"/>
+<EditText
+    android:id="@+id/text4"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@null"
+    android:hint="编辑个性签名"
+    android:textSize="18sp"
+    android:ellipsize="end"/>
+    </LinearLayout>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:padding="10dp"
+     android:background="@color/colorhongse"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="等级："/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_filter_vintage_black_24dp"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_filter_vintage_black_24dp"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_filter_vintage_black_24dp"/>
+
+</LinearLayout>
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="5dp"
+       >
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+
+           android:textSize="18dp"
+           android:text="好友"/>
+       <Button
+           android:id="@+id/button2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:layout_weight="1"
+           android:textSize="18dp"
+           android:text="关注"/>
+       <Button
+           android:id="@+id/button3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:layout_weight="1"
+           android:textSize="18dp"
+           android:text="粉丝"/>
+
+
+
+   </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:textSize="18dp"
+            android:text="鲜花"/>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:text="奖状"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:text="勋章"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:padding="10dp"
+        android:background="@color/colorhongse"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="我的钱包"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/qianbao"/>
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="学习记录"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="邀请好友"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/yaoqing"/>
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text=" 动态 "/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="训练计划"
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/jihua"/>
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="好友聊天"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:padding="5dp"
+        android:background="@color/colorhongse"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_gravity="bottom"
+    >
+<Button
+    android:id="@+id/button13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="设置"/>
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="用户指南"/>
+    <Button
+    android:id="@+id/button15"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="客服"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+

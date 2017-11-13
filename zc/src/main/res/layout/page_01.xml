@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:id="@+id/qqLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <evan.wang.view.CircleImageView
+            android:id="@+id/head_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:text="李力喆"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/head_image1" />
+
+        <TextView
+            android:id="@+id/texr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/head_image1"
+
+            android:layout_marginRight="2dp"
+            android:text="南师附中江宁分校小学部小学2017级  五班"
+            android:textSize="18sp"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="12dp"
+            android:layout_alignBottom="@+id/head_image1"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.46">
+
+        <Button
+            android:id="@+id/Button_1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="训练"
+            android:layout_marginTop="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/Button_2" />
+
+        <Button
+
+            android:id="@+id/Button_2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:text="监测"
+            android:layout_marginTop="120dp"
+            android:layout_below="@+id/Button_1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="122dp" />
+    </RelativeLayout>
+
+</LinearLayout>

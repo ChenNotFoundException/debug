@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+    <!-- 设置参考-->
+
+    <View
+        android:id= "@+id/strut"
+        android:layout_width= "0dp"
+        android:layout_height= "0dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/strut"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/denglu"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:paddingTop="60dp"
+        android:gravity="center"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhuce"
+        android:text="注册"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:layout_alignLeft="@id/strut"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/denglu"
+        android:paddingTop="60dp"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/shoujihao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:hint="请输入手机号码"
+        android:gravity="left"
+        android:inputType="phone"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/zhuce"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sendcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取验证码"
+        android:layout_marginTop="19dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_below="@+id/count"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/shoujihao"
+        android:layout_below="@+id/shoujihao"
+        android:layout_marginTop="21dp"
+        android:ems="14"
+        android:hint="验证码"
+        android:gravity="left"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/sendcode"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

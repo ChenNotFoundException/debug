@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <TextView
+        android:id="@+id/setcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置密码"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/newcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/setcode"
+        android:layout_below="@+id/setcode"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="请输入新密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/newcode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/newcode"
+        android:layout_below="@+id/newcode"
+        android:layout_marginTop="43dp"
+        android:hint="确认新密码"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="50dp"
+        android:text="确定"
+        android:layout_below="@+id/newcode2"
+        android:layout_alignEnd="@+id/setcode" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击确定，即表示已阅读并同意《》条款"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/ok"
+        android:layout_alignStart="@+id/newcode2" />
+</RelativeLayout>

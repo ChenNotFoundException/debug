@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+<!-- 设置参考-->
+
+    <View
+        android:id= "@+id/strut"
+        android:layout_width= "0dp"
+        android:layout_height= "0dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/strut"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/denglu"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:paddingTop="60dp"
+        android:gravity="center"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zhuce"
+        android:text="注册"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:layout_alignLeft="@id/strut"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/denglu"
+        android:paddingTop="60dp"
+        android:clickable="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/shoujihao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:hint="手机号"
+        android:gravity="center"
+        android:inputType="phone"
+        android:layout_alignBottom="@+id/mima"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp" />
+
+    <EditText
+        android:id="@+id/mima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:hint="登录密码"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:textColor="#ffffffff"
+        android:background="#00323232"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/shoujihao"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/forget"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/forget"
+        android:layout_toEndOf="@+id/mima"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="手机登录" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="使用社交账号一键登录"
+        android:layout_alignEnd="@+id/forget"
+        android:textColor="#FFFFFFFF"
+        android:layout_alignStart="@+id/mima" />
+
+    <ImageButton
+        android:id="@+id/imageButtonWechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00323232"
+        app:srcCompat="@drawable/wechat"
+        android:layout_below="@+id/textView"
+        android:scaleType="centerInside"
+        android:layout_alignEnd="@+id/strut"
+        android:paddingTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonQQ"
+        android:scaleType="centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/qq"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/strut"
+        android:paddingTop="100dp"
+        android:layout_below="@+id/textView"
+        android:paddingBottom="50dp"
+        android:background="#00323232"/>
+
+
+
+</RelativeLayout>
